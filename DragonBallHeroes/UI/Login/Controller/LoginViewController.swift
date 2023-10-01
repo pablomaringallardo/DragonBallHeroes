@@ -63,7 +63,7 @@ class LoginViewController: UIViewController {
             
             return
         }
-        //hola
+        
         NetworkManager.shared.login(email: email, password: password) { token, error in
             if let token = token {
                 

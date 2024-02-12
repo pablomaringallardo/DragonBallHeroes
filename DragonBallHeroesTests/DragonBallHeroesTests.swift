@@ -17,6 +17,14 @@ final class DragonBallHeroesTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testLogin() {
+        
+        NetworkManager.shared.login(email: "pablomaringallardo17@gmail.com", password: "12") { token, error in
+            XCTAssertNotNil(token)
+            print("TOKEN: ", token)
+        }
+    }
 
     func testExample() throws {
         // This is an example of a functional test case.

@@ -14,6 +14,7 @@
 		A303C1CF2ABDA6D4007AC1A3 /* DragonBallHeroesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A303C1CE2ABDA6D4007AC1A3 /* DragonBallHeroesTests.swift */; };
 		A303C1D92ABDA6D4007AC1A3 /* DragonBallHeroesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A303C1D82ABDA6D4007AC1A3 /* DragonBallHeroesUITests.swift */; };
 		A303C1DB2ABDA6D4007AC1A3 /* DragonBallHeroesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A303C1DA2ABDA6D4007AC1A3 /* DragonBallHeroesUITestsLaunchTests.swift */; };
+		A32E05DB2B7389EF001BC80C /* NetworkModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E05DA2B7389EF001BC80C /* NetworkModelTests.swift */; };
 		A38123EF2AC1FE69001DA6B3 /* DetailTransformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38123ED2AC1FE69001DA6B3 /* DetailTransformationViewController.swift */; };
 		A38123F02AC1FE69001DA6B3 /* DetailTransformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38123EE2AC1FE69001DA6B3 /* DetailTransformationViewController.xib */; };
 		A3DB14582ABDB1CA008BF3A8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB14562ABDB1CA008BF3A8 /* LoginViewController.swift */; };
@@ -32,6 +33,9 @@
 		A3DB5C732AC0585300098BCF /* TransformationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB5C712AC0585300098BCF /* TransformationsViewController.swift */; };
 		A3DB5C742AC0585300098BCF /* TransformationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3DB5C722AC0585300098BCF /* TransformationsViewController.xib */; };
 		A3DB5C762AC058EE00098BCF /* Transformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB5C752AC058EE00098BCF /* Transformations.swift */; };
+		A3FE0BAF2B7A3C2C00D4AD78 /* Heroe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB14732ABE0599008BF3A8 /* Heroe.swift */; };
+		A3FE0BB02B7A3C3900D4AD78 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB145B2ABDDB1F008BF3A8 /* NetworkManager.swift */; };
+		A3FE0BB12B7A3C7E00D4AD78 /* Transformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB5C752AC058EE00098BCF /* Transformations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,7 @@
 		A303C1D42ABDA6D4007AC1A3 /* DragonBallHeroesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonBallHeroesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A303C1D82ABDA6D4007AC1A3 /* DragonBallHeroesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallHeroesUITests.swift; sourceTree = "<group>"; };
 		A303C1DA2ABDA6D4007AC1A3 /* DragonBallHeroesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallHeroesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A32E05DA2B7389EF001BC80C /* NetworkModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModelTests.swift; sourceTree = "<group>"; };
 		A38123ED2AC1FE69001DA6B3 /* DetailTransformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTransformationViewController.swift; sourceTree = "<group>"; };
 		A38123EE2AC1FE69001DA6B3 /* DetailTransformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTransformationViewController.xib; sourceTree = "<group>"; };
 		A3DB14562ABDB1CA008BF3A8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				A303C1CE2ABDA6D4007AC1A3 /* DragonBallHeroesTests.swift */,
+				A32E05DA2B7389EF001BC80C /* NetworkModelTests.swift */,
 			);
 			path = DragonBallHeroesTests;
 			sourceTree = "<group>";
@@ -556,7 +562,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FE0BB02B7A3C3900D4AD78 /* NetworkManager.swift in Sources */,
+				A32E05DB2B7389EF001BC80C /* NetworkModelTests.swift in Sources */,
 				A303C1CF2ABDA6D4007AC1A3 /* DragonBallHeroesTests.swift in Sources */,
+				A3FE0BAF2B7A3C2C00D4AD78 /* Heroe.swift in Sources */,
+				A3FE0BB12B7A3C7E00D4AD78 /* Transformations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,6 +32,12 @@ final class NetworkManager {
     
     static let shared = NetworkManager()
     
+    private let session: URLSession
+    
+    init(session: URLSession = .shared) {
+        self.session = session
+    }
+    
     func login(email: String, password: String, completion: @escaping (String?, Error?) -> Void) {
         guard let url = URL(string: "\(baseUrl)\(Endpoint.login.rawValue)") else {
             completion(nil, NetworkError.malformedUrl)
@@ -50,7 +56,7 @@ final class NetworkManager {
         urlRequest.httpMethod = HttpMethods.post.rawValue
         urlRequest.setValue("Basic \(base64)", forHTTPHeaderField: "Authorization")
         
-        let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+        let task = session.dataTask(with: urlRequest) { data, response, error in
             guard error == nil else {
                 completion(nil, error)
                 return
@@ -94,7 +100,7 @@ final class NetworkManager {
         urlRequest.setValue("Bearer \(token ?? "")", forHTTPHeaderField: "Authorization")
         urlRequest.httpBody = urlComponents.query?.data(using: .utf8)
         
-        let task = URLSession.shared.dataTask(with: urlRequest) { data, _, error in
+        let task = session.dataTask(with: urlRequest) { data, _, error in
             
             guard error == nil else {
                 completion(nil, error)
@@ -132,7 +138,7 @@ final class NetworkManager {
         urlRequest.setValue("Bearer \(token ?? "")", forHTTPHeaderField: "Authorization")
         urlRequest.httpBody = urlComponents.query?.data(using: .utf8)
         
-        let task = URLSession.shared.dataTask(with: urlRequest) { data, _, error in
+        let task = session.dataTask(with: urlRequest) { data, _, error in
             
             guard error == nil else {
                 completion(nil, error)
